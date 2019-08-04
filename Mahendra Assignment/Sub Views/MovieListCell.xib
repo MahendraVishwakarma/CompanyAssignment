@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieListCell" customModule="Mahendra_Assignment" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="87" id="KGk-i7-Jjw" customClass="MovieListCell" customModule="Mahendra_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="749-eQ-3rI">
+                        <rect key="frame" x="7" y="8" width="70.5" height="70.5"/>
+                        <color key="backgroundColor" white="0.76078232020547942" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70.5" id="jMt-YL-K9R"/>
+                            <constraint firstAttribute="height" constant="70.5" id="qk8-Ou-CQm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLQ-Ko-aos">
+                        <rect key="frame" x="85.5" y="18" width="303.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="wfh-cN-ECy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYV-jX-awF">
+                        <rect key="frame" x="110" y="47" width="279" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="e03-mT-FIa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⭐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVb-4M-a6k">
+                        <rect key="frame" x="86" y="47" width="22" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="baK-gd-LUo"/>
+                            <constraint firstAttribute="width" constant="22" id="ju3-Yp-L6M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="749-eQ-3rI" secondAttribute="bottom" constant="8" id="3P8-k7-rNp"/>
+                    <constraint firstItem="xVb-4M-a6k" firstAttribute="leading" secondItem="749-eQ-3rI" secondAttribute="trailing" constant="8.5" id="5vz-Cq-ndE"/>
+                    <constraint firstAttribute="trailing" secondItem="PLQ-Ko-aos" secondAttribute="trailing" constant="8" id="9O3-wM-LZ9"/>
+                    <constraint firstItem="749-eQ-3rI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="ARf-u1-lsC"/>
+                    <constraint firstItem="749-eQ-3rI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="EOp-7c-3lH"/>
+                    <constraint firstItem="xVb-4M-a6k" firstAttribute="top" secondItem="PLQ-Ko-aos" secondAttribute="bottom" constant="8" id="F5L-JY-Z8w"/>
+                    <constraint firstItem="PLQ-Ko-aos" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="OPT-uA-Dra"/>
+                    <constraint firstAttribute="trailing" secondItem="VYV-jX-awF" secondAttribute="trailing" constant="8" id="TlF-zg-lep"/>
+                    <constraint firstItem="VYV-jX-awF" firstAttribute="leading" secondItem="xVb-4M-a6k" secondAttribute="trailing" constant="2" id="f1b-fc-FNk"/>
+                    <constraint firstItem="PLQ-Ko-aos" firstAttribute="leading" secondItem="749-eQ-3rI" secondAttribute="trailing" constant="8" id="mt3-an-QCh"/>
+                    <constraint firstItem="VYV-jX-awF" firstAttribute="centerY" secondItem="xVb-4M-a6k" secondAttribute="centerY" id="mt4-pL-3vu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="movieName" destination="PLQ-Ko-aos" id="rim-ZL-j58"/>
+                <outlet property="posterImageView" destination="749-eQ-3rI" id="uAh-9m-Xq2"/>
+                <outlet property="totalRating" destination="VYV-jX-awF" id="3RM-ti-CHu"/>
+            </connections>
+            <point key="canvasLocation" x="103.62318840579711" y="49.888392857142854"/>
+        </tableViewCell>
+    </objects>
+</document>

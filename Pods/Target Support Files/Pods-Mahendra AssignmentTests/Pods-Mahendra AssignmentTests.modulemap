@@ -1,0 +1,6 @@
+framework module Pods_Mahendra_AssignmentTests {
+  umbrella header "Pods-Mahendra AssignmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
