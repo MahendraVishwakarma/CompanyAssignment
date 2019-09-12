@@ -1,0 +1,27 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'Badlee' do
+
+use_frameworks!
+platform :ios, ‘9.0’
+source 'https://github.com/CocoaPods/Specs.git'
+pod 'TPKeyboardAvoidingSwift'
+pod 'AFNetworking', '~> 2.5'
+pod 'MBProgressHUD’
+pod 'SRCountdownTimer'
+pod 'Floaty', '~> 3.0.0'
+pod 'FMDB', '~> 2.7'
+source = 'https://github.com/TimOliver/TOCropViewController'
+pod 'CropViewController'
+pod 'BABCropperView'
+pod 'ActiveLabel'
+pod 'SwiftWebSocket'
+pod 'RealmSwift'
+pod 'GoogleSignIn'
+pod 'FacebookCore'
+pod 'FacebookLogin'
+
+
+end
+
